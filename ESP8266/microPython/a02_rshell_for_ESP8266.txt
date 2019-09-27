@@ -1,0 +1,42 @@
+# Mohammad Safeea, 27-Sept-2019
+# connecting to ESP8266
+
+--------------------------------------------------
+        *** connecting to ESP8266 ***
+
+# MICROPYTHON has its own shell, it is called
+# (repl), you can access it through serial port
+# by connecting to it from PC through PuTTY.
+# But, for more advanced usage, it is recommened 
+# to use (rshell), it is a fully fledged shell that
+# allows advanced functionalities, for example copying
+# files from PC to ESP8266.
+
+# To install (rshell), from command line type:
+sudo pip3 install rshell
+
+# To run rshell, from command line type:
+sudo rshell --buffer-size=30 -p /dev/ttyUSB0
+
+# To list files on ESP8266 from inside 
+# (rshell) type the following:
+ls /pyboard
+
+# To copy a file from PC to ESP8266,
+# from insdide rshell type:
+cp  NAMEandPATH_Of_File_On_PC /pyboard
+
+# To add a script to startup,
+# create a main.py, that includes:
+import NAME_of_Script_to_Run_on_Startup
+
+# Then copy the files (main.py) and
+# (NAME_of_Script_to_Run_on_Startup.py)
+# to ESP8266
+
+# To run (repl) from inside (rshell) type
+repl
+
+# Special commands for repl,
+Ctrl+x # used to exit the repl
+
