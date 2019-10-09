@@ -17,6 +17,8 @@ sudo pip3 install rshell
 
 # To run rshell, from command line type:
 sudo rshell --buffer-size=30 -p /dev/ttyUSB0
+# Or you can simply type:
+sudo rshell -p /dev/ttyUSB0
 
 # To list files on ESP8266 from inside 
 # (rshell) type the following:

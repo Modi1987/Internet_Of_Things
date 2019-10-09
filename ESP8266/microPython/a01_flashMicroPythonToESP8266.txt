@@ -21,7 +21,7 @@ ch341-uart converter now attached to ttyUSB0
 sudo pip3 install esptool
 
 # To check the info of your ESP8266 using, use  
-# esptool using the following shell command:
+# esptool through the following shell command:
 sudo esptool.py --port /dev/ttyUSB0 flash_id
 
 # To erase the memory of the ESP8266, type:
